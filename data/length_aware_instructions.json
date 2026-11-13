@@ -1,0 +1,153 @@
+[
+  {
+    "instruction": "Hi",
+    "input": "",
+    "output": "Hello! How can I help you today?"
+  },
+  {
+    "instruction": "Hello!",
+    "input": "",
+    "output": "Hi there! What would you like to ask or discuss?"
+  },
+  {
+    "instruction": "What is the capital of Japan?",
+    "input": "",
+    "output": "The capital of Japan is Tokyo."
+  },
+  {
+    "instruction": "What is the chemical symbol for water?",
+    "input": "",
+    "output": "The chemical symbol for water is H2O."
+  },
+  {
+    "instruction": "Explain briefly what photosynthesis is.",
+    "input": "",
+    "output": "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen."
+  },
+  {
+    "instruction": "Explain briefly what an API is.",
+    "input": "",
+    "output": "An API (Application Programming Interface) is a set of rules that lets different software applications communicate and exchange data with each other."
+  },
+  {
+    "instruction": "Summarize machine learning in one sentence.",
+    "input": "",
+    "output": "Machine learning is a branch of artificial intelligence where computer systems learn patterns from data to make predictions or decisions without being explicitly programmed."
+  },
+  {
+    "instruction": "Give a short answer: why is the sky blue?",
+    "input": "",
+    "output": "The sky appears blue because Earth's atmosphere scatters shorter blue wavelengths of sunlight more than longer red wavelengths."
+  },
+  {
+    "instruction": "Explain briefly what HTTP stands for.",
+    "input": "",
+    "output": "HTTP stands for Hypertext Transfer Protocol, the foundation of data communication on the World Wide Web."
+  },
+  {
+    "instruction": "What is the boiling point of water at sea level?",
+    "input": "",
+    "output": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at standard sea-level atmospheric pressure."
+  },
+  {
+    "instruction": "What is an algorithm?",
+    "input": "",
+    "output": "An algorithm is a finite, well-defined sequence of step-by-step instructions used to solve a problem or perform a computation. Every computer program relies on algorithms to process inputs, make decisions, and produce outputs efficiently."
+  },
+  {
+    "instruction": "How does a neural network learn?",
+    "input": "",
+    "output": "A neural network learns by passing input data through layers of weighted connections to produce a prediction, then measuring how far that prediction is from the true answer using a loss function. Using backpropagation and an optimization algorithm such as gradient descent, the network iteratively adjusts its weights to reduce the error over many training examples."
+  },
+  {
+    "instruction": "What is the difference between RAM and storage?",
+    "input": "",
+    "output": "RAM (Random Access Memory) is fast, temporary memory that holds data and programs currently in use and loses its contents when power is turned off. Storage, such as an SSD or hard drive, is slower but non-volatile, meaning it retains files, operating systems, and applications permanently even without power."
+  },
+  {
+    "instruction": "Why is version control important in software development?",
+    "input": "",
+    "output": "Version control systems such as Git track every change made to source code over time, allowing developers to inspect history and revert mistakes safely. They also enable multiple team members to work on separate branches simultaneously and merge their work without overwriting each other's changes."
+  },
+  {
+    "instruction": "What is overfitting in machine learning?",
+    "input": "",
+    "output": "Overfitting happens when a model memorizes noise and specific details in the training dataset rather than learning generalizable patterns. As a result, it achieves very low error on training data but performs poorly on unseen validation or test data."
+  },
+  {
+    "instruction": "What is a REST API?",
+    "input": "",
+    "output": "A REST API is a web service architecture that uses standard HTTP methods such as GET, POST, PUT, and DELETE to perform operations on resources identified by URLs. Because requests are stateless and typically exchange JSON payloads, REST APIs are lightweight, scalable, and easy to integrate across different platforms."
+  },
+  {
+    "instruction": "Explain in detail how photosynthesis works.",
+    "input": "",
+    "output": "Photosynthesis occurs inside chloroplasts in plant cells and proceeds in two main stages:\n1. Light-dependent reactions: Chlorophyll absorbs sunlight in the thylakoid membranes, splitting water molecules into oxygen gas, protons, and energized electrons. This energy produces ATP and NADPH.\n2. Calvin cycle (light-independent reactions): In the stroma, enzymes use ATP and NADPH to fix atmospheric carbon dioxide into three-carbon sugars, which the plant converts into glucose and starch for energy and growth.\nOverall, plants convert light energy, water, and carbon dioxide into chemical energy stored in glucose while releasing oxygen as a byproduct."
+  },
+  {
+    "instruction": "Explain step by step how a transformer language model generates text.",
+    "input": "",
+    "output": "A transformer language model generates text autoregressively one token at a time:\n1. Tokenization: The input prompt is split into subword token IDs using a tokenizer.\n2. Embeddings: Each token ID is mapped to a dense vector and combined with positional embeddings so the model knows token order.\n3. Transformer blocks: The sequence passes through stacked layers of causal multi-head self-attention (allowing each token to attend only to earlier tokens) and feed-forward networks with layer normalization and residual connections.\n4. Logits and sampling: The final hidden state produces vocabulary logits, which are optionally filtered with Top-K and scaled by temperature before softmax selects the next token.\n5. Iteration: The chosen token is appended to the sequence and the loop repeats until an end-of-text token or maximum length is reached."
+  },
+  {
+    "instruction": "Explain in detail how gradient descent works.",
+    "input": "",
+    "output": "Gradient descent is an iterative optimization algorithm used to minimize a model's loss function by updating its parameters:\n1. Forward pass: The model computes predictions from the current weights and evaluates the loss against target values.\n2. Gradient computation: Backpropagation calculates the partial derivative (gradient) of the loss with respect to every weight, showing the direction of steepest increase.\n3. Parameter update: Each weight is moved in the opposite direction of its gradient, scaled by a hyperparameter called the learning rate.\n4. Convergence: Repeating these steps over many mini-batches gradually reduces the loss until the model reaches a stable minimum. Variants like AdamW add momentum and adaptive per-parameter step sizes for faster, more reliable training."
+  },
+  {
+    "instruction": "Provide a step-by-step guide to building a full-stack web application.",
+    "input": "",
+    "output": "Building a full-stack web application typically follows five structured phases:\n1. Requirements and architecture: Define core user flows, API endpoints, data models, and choose your frontend and backend frameworks.\n2. Backend and data layer: Implement REST or GraphQL endpoints, business logic, input validation, and database or model integration.\n3. Frontend interface: Build responsive UI components, manage application state, handle loading and error states, and connect to backend APIs.\n4. Integration and testing: Verify end-to-end communication, configure CORS properly, write unit and integration tests, and handle edge cases.\n5. Deployment: Package dependencies, set environment variables securely, and monitor logs and health endpoints in production."
+  },
+  {
+    "instruction": "Explain in detail the difference between supervised, unsupervised, and reinforcement learning.",
+    "input": "",
+    "output": "Machine learning is commonly divided into three main paradigms based on how models receive feedback:\n1. Supervised learning: The model trains on labeled input-output pairs (such as emails labeled spam or not spam) and learns a mapping to predict labels or numerical values for new data.\n2. Unsupervised learning: The model receives unlabeled data and discovers hidden structure on its own, such as grouping similar customers via clustering or compressing features with dimensionality reduction.\n3. Reinforcement learning: An agent interacts with an environment, chooses actions, and receives scalar rewards or penalties, gradually learning a policy that maximizes cumulative long-term reward."
+  },
+  {
+    "instruction": "Explain briefly why temperature matters in LLM sampling.",
+    "input": "",
+    "output": "Temperature controls randomness in token selection: lower values make outputs more focused and deterministic, while higher values increase creativity and diversity."
+  },
+  {
+    "instruction": "What is Top-K sampling? Explain briefly.",
+    "input": "",
+    "output": "Top-K sampling restricts the model to choosing the next token only from the K most probable candidates, preventing unlikely or nonsensical tokens from being sampled."
+  },
+  {
+    "instruction": "Explain in detail how Top-K sampling and temperature work together during text generation.",
+    "input": "",
+    "output": "Top-K sampling and temperature work sequentially to balance coherence and variety in generated text:\n1. Logit filtering (Top-K): At each generation step, the model outputs raw scores (logits) for the entire vocabulary. Top-K keeps only the K highest-scoring tokens and sets all remaining logits to negative infinity so they have zero probability.\n2. Temperature scaling: The surviving K logits are divided by the temperature value. A temperature below 1.0 sharpens the distribution so high-probability tokens dominate, while a temperature above 1.0 flattens probabilities to encourage more diverse word choices.\n3. Sampling: Softmax converts the adjusted logits into probabilities, and one token is sampled. Setting temperature to 0 bypasses sampling altogether and selects the single highest-scoring token greedily."
+  },
+  {
+    "instruction": "What is Python commonly used for?",
+    "input": "",
+    "output": "Python is a versatile, high-level programming language widely used for machine learning, data science, web backends, automation scripting, and scientific computing. Its readable syntax and rich ecosystem of libraries such as PyTorch, FastAPI, and NumPy make it a top choice for both rapid prototyping and production systems."
+  },
+  {
+    "instruction": "Compare SQL and NoSQL databases briefly.",
+    "input": "",
+    "output": "SQL databases store structured data in relational tables with fixed schemas, while NoSQL databases store flexible, unstructured or semi-structured data such as documents or key-value pairs."
+  },
+  {
+    "instruction": "Explain step by step how DNS resolves a domain name.",
+    "input": "",
+    "output": "DNS resolution translates a human-readable domain name into an IP address through a series of lookups:\n1. Cache check: Your browser and operating system first check their local DNS cache for a recent record.\n2. Recursive resolver: If not cached, the query goes to a recursive DNS resolver (usually run by your ISP or a public provider).\n3. Root and TLD servers: The resolver asks a root nameserver for the Top-Level Domain server (such as .com), then asks the TLD server for the domain's authoritative nameserver.\n4. Authoritative answer: The authoritative nameserver returns the IP address, which the resolver caches and sends back to your browser so it can connect to the web server."
+  },
+  {
+    "instruction": "What is the purpose of dropout in neural networks?",
+    "input": "",
+    "output": "Dropout is a regularization technique that randomly sets a fraction of neuron activations to zero during each training step. This prevents units from co-adapting too strongly to the training data and encourages the network to learn redundant, more generalizable representations."
+  },
+  {
+    "instruction": "Explain briefly what CORS is in web development.",
+    "input": "",
+    "output": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that controls whether a web page on one origin is allowed to make requests to a backend server on a different origin."
+  },
+  {
+    "instruction": "Explain in detail how tokenization works in GPT-2.",
+    "input": "",
+    "output": "GPT-2 uses Byte-Level Byte Pair Encoding (BPE) to convert raw text into integer token IDs:\n1. Byte conversion: Text is first encoded as UTF-8 bytes so any character, punctuation mark, or emoji can be represented without unknown-token errors.\n2. Subword merging: Starting from individual bytes, BPE iteratively merges the most frequent adjacent pairs learned during tokenizer training into larger subword units.\n3. Vocabulary lookup: Common words become single tokens, while rare words are split into smaller recognizable pieces, resulting in a compact 50,257-token vocabulary."
+  }
+]
+
